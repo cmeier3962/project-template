@@ -1,7 +1,12 @@
-from . import __version__
+"""Allow the package to run with `python -m your_project`."""
+
+from your_project import greet
+
 
 def main() -> None:
-    print(f"your_project {__version__}")
+    """Run the sample application."""
+    print(greet())
+
 
 if __name__ == "__main__":
     main()

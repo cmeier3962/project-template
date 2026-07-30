@@ -1,8 +1,12 @@
-# scripts/smoke_test.py
-from your_project import __version__
+"""Run a basic manual check of the installed package."""
+
+from your_project import greet
+
 
 def main() -> None:
-    print("Smoke OK. Version:", __version__)
+    """Print a sample result."""
+    print(greet("Developer"))
+
 
 if __name__ == "__main__":
     main()
